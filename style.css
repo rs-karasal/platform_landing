@@ -1,0 +1,469 @@
+@font-face {
+    font-family: 'MainTextFont';
+    src: url('./fonts/SourceSans3-VariableFont_wght.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to bottom, rgb(72, 1, 119), rgb(1, 32, 119), rgb(72, 1, 119));
+}
+
+
+/* ############### HEADER #################### */
+header {
+    padding: 0.5rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 3rem;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+}
+
+header.coloured {
+    background-color: rgba(75, 0, 161, 0.8);
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    list-style-type: none;
+    font-size: 1.2rem;
+    font-family: 'MainTextFont', sans-serif;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgb(50, 0, 63);
+}
+
+header img {
+    width: 30%;
+}
+
+.nav-link {
+    color: whitesmoke;
+    text-decoration: inherit;
+    background-color: transparent;
+    border: none;
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(204, 0, 255);
+}
+
+.highlighted-text {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ############### MAIN IDEA ##################### */
+
+#main-idea {
+    position: relative;
+}
+
+#logo-img {
+    position: absolute;
+    z-index: 1;
+    width: 20%;
+    padding: 3rem;
+}
+
+#background-img {
+    width: 100%;
+}
+
+#goal-list {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    text-shadow: 0 0 10px rgb(0, 0, 0);
+}
+
+#goal-list-elements {
+    text-align: center;
+    color: rgb(44, 3, 77);
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+
+}
+
+.goal-list-element-2 {
+    font-size: 2.2rem;
+    /* text-shadow: 1px 1px 2px rgb(255, 255, 255); */
+}
+
+.goal-list-element-3 {
+    font-size: 1.9rem;
+    /* text-shadow: 1px 1px 2px rgb(255, 255, 255); */
+}
+
+.goal-list-element-4 {
+    font-size: 1.5rem;
+}
+
+/* ############### SECTION DIVIDER #################### */
+
+.section_divider {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* ############### SERVICES #################### */
+.heading-services {
+    color: rgb(228, 228, 228);
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5rem;
+}
+
+.services-content-element {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.services-content-element img {
+    width: 5rem;
+    height: 5rem;
+    background-size: 100%;
+}
+
+.services-content {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: auto;
+    justify-content: center;
+    justify-items: start;
+    align-items: start;
+    column-gap: 3rem;
+    row-gap: 7rem;
+    column-gap: 4rem;
+    color: rgb(228, 228, 228);
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.for-students {
+    margin-bottom: 5rem;
+}
+
+.for-mentors {
+    margin-bottom: 5rem;
+}
+
+.services-button {
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.services button {
+    width: 14rem;
+    height: 2.5rem;
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 1rem;
+    background-color: deeppink;
+    color: rgb(228, 228, 228);
+    border: 0;
+    border-radius: 5px;
+}
+
+.services button:hover {
+    font-family: 'MainTextFont', sans-serif;
+    background-color: rgb(228, 228, 228);
+    color: rgb(114, 0, 143);
+    cursor: pointer;
+}
+
+
+/* ############### MISSION #################### */
+
+#logo-div {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#logo {
+    width: 20%;
+}
+
+.heading-p {
+    color: rgb(228, 228, 228);
+    text-align: center;
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.heading-p span {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+.left-texted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 4rem 2rem;
+}
+
+.right-texted {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2rem 0 2rem;
+}
+
+.mission-text-content {
+    flex-basis: 60%;
+    margin: 0 2rem 2rem 2rem;
+}
+
+.mission-heading {
+    color: rgb(228, 228, 228);
+    text-align: left;
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.mission-text {
+    color: rgb(228, 228, 228);
+    text-align: left;
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 1.2rem;
+}
+
+.mission-text ul {
+    margin-left: 2rem;
+}
+
+.mission-text li {
+    margin: 1rem 0;
+}
+
+.mission-higlighted {
+    color: rgb(0, 247, 255);
+    font-weight: 800;
+}
+
+.mission-img {
+    width: 40%;
+    height: fit-content;
+    border-radius: 30% 0 30% 0;
+    box-shadow: 10px 10px 4px rgb(33, 0, 54);
+}
+
+.left-image {
+    margin-right: 2rem;
+}
+
+/* ############### MENTORS #################### */
+#mentors-list {
+    display: flex;
+    column-gap: 2rem;
+    justify-content: center;
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.mentor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    width: 20%;
+}
+
+.mentor img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.mentors-list-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1rem;
+}
+
+.mentor-name {
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.mentor-level {
+    color: rgb(0, 247, 255);
+    font-size: 1.2rem;
+}
+
+.what-to-learn {
+    color: white;
+    font-size: 1.2rem;
+}
+
+.about-mentor {
+    color: rgba(0, 225, 255, 0.815);
+    font-size: 1.2rem;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.price-hour {
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* ############### STUDENT and MENTOR BUTTONS #################### */
+.heading-roles {
+    color: rgb(228, 228, 228);
+    text-align: center;
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+
+.learn-heading {
+    color: rgb(228, 228, 228);
+    text-align: center;
+    font-family: 'MainTextFont', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.choose-role-buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem;
+}
+
+.choose-role-buttons a {
+    flex-basis: 30%;
+    border-radius: 10%;
+    display: inline-block;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choose-role-buttons img {
+    width: 100%;
+    height: auto;
+    border-radius: 10%;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.choose-role-buttons img:hover {
+    filter: none;
+    transform: scale(1.1);
+}
+
+.choose-role-buttons p {
+    position: absolute;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 4px rgb(204, 0, 255);
+    font-size: 1.7rem;
+    font-family: 'MainTextFont', sans-serif;
+    font-weight: 800;
+
+}
+
+
+/* ############### GET IN TOUCH #################### */
+.get-in-touch {
+    text-align: center;
+    font-family: 'MainTextFont', sans-serif;
+    color: rgb(228, 228, 228);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+#call-to-action {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+}
+
+.get-in-touch span {
+    font-weight: 1000;
+}
+
+
+.get-in-touch img {
+    width: 1.5rem;
+}
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+/* ############### FOOTER #################### */
+footer {
+    margin: 2rem;
+    font-family: 'MainTextFont', sans-serif;
+    color: rgb(228, 228, 228);
+    font-size: 1rem;
+}
+
+
+/* ############## MEDIA ##################### */
+@media (max-width: 1000px) {
+    html {
+      font-size: 14px;
+    }
+}
+
+@media (max-width: 860px) {
+    html {
+      font-size: 12px;
+    }
+}
+
+@media (max-width: 730px) {
+    html {
+      font-size: 10px;
+    }
+}

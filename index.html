@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>yDecide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-11258792769">
+    </script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'AW-11258792769');
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <ul class="header-nav">
+            <li><a href="#top" onclick="scrollToTop(event)" class="nav-link">yDecide</a></li>
+            <li><a href="#education" onclick="scrollToEducation(event)" class="nav-link">Обучение</a></li>
+            <li><a href="#mission" onclick="scrollToMission(event)" class="nav-link">Идея yDecide</a></li>
+            <li><a href="#mentors" onclick="scrollToMentors(event)" class="nav-link">Менторы</a></li>
+            <li><a href="#contacts" onclick="scrollToContacts(event)" class="nav-link">Контакты</a></li>
+            <li><a href="#learn" onclick="scrollToLearn(event)" class="nav-link highlighted-text">Бесплатное пробное
+                    занятие</a></li>
+        </ul>
+    </header>
+
+    <main>
+        <div id="main-idea">
+            <img id="logo-img" src="./images/icons/logo.svg" alt="logo">
+            <img id="background-img" src="./images/header_image.jpg" alt="learning with mentor online">
+            <div id="goal-list">
+                <div id="goal-list-elements">
+                    <p class="goal-list-element-4">Создай свой IT-проект</p>
+                    <p class="goal-list-element-3">Подготовься к экзаменам</p>
+                    <p class="goal-list-element-2">Научись программировать</p>
+                    <p>Достигни своих целей</p>
+                    <p class="goal-list-element-2">Найди работу своей мечты</p>
+                    <p class="goal-list-element-3">Подготовься к олимпиадам</p>
+                    <p class="goal-list-element-4">Стань IT-специалистом</p>
+                </div>
+                <p>вместе с ментором.</p>
+            </div>
+        </div>
+
+        <!-- YDECIDE SERVICES -->
+        <div id="services" class="services">
+            <div class="for-students">
+                <p class="heading-services">Обучение</p>
+                <div class="services-content">
+                    <div class="services-content-element">
+                        <img src="images/icons/mentorship.svg" alt="mentorship icon">
+                        <p>Найдите ментора, который подходит именно Вам</p>
+                    </div>
+                    <div class="services-content-element">
+                        <img src="images/icons/goals.svg" alt="schedule icon">
+                        <p>Ставьте цели и получайте быстрый результат</p>
+                    </div>
+                    <div class="services-content-element">
+                        <img src="images/icons/schedule.svg" alt="schedule icon">
+                        <p>Настройте свое расписание совместно с ментором</p>
+                    </div>
+                    <div class="services-content-element">
+                        <img src="images/icons/trial.svg" alt="schedule icon">
+                        <p>Попробуйте формат обучения на бесплатном пробном занятии</p>
+                    </div>
+                </div>
+                <div class="services-button">
+                    <button type="button" onclick="openLink()">ЗАПИСАТЬСЯ НА ЗАНЯТИЕ</button>
+                </div>
+            </div>
+        </div>
+
+
+        <hr class="section_divider">
+
+
+        <!-- ABOUT MISSION -->
+        <div id="mission" class="mission">
+            <div id="logo-div">
+                <img id="logo" src="./images/icons/logo.png" alt="logo">
+            </div>
+            <p class="heading-p">Тебе решать, каким будет твое<br><span>ПЕРСОНАЛЬНОЕ ОБУЧЕНИЕ</span></p>
+
+            <div class="mission-content">
+                <div class="left-texted">
+                    <div class="mission-text-content">
+                        <p class="mission-heading">ПРОВЕРЕННЫЕ ВРЕМЕНЕМ МЕТОДЫ ОБУЧЕНИЯ</p>
+                        <div class="mission-text">
+                            <p>Обучение с ментором поддерживает все преимущества персонального формата образования:</p>
+                            <ul>
+                                <li>Индивидуальный подход - <span class="mission-higlighted">никаких шаблонных
+                                        уроков</span></li>
+                                <li>Мотивация и поддержка - <span class="mission-higlighted">амбициозная цель
+                                        достижима</span></li>
+                                <li>Экспертиза и опыт - <span class="mission-higlighted">узнайте все, что вас
+                                        интересует</span></li>
+                                <li>Обратная связь и оценка - <span class="mission-higlighted">учитесь на своих
+                                        ошибках</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <img src="images/mission_2.jpg" alt="technologies" class="mission-img">
+                </div>
+                <div class="right-texted">
+                    <img src="images/mission_1.jpg" alt="technologies" class="mission-img left-image">
+                    <div class="mission-text-content">
+                        <p class="mission-heading">ТРАНСФОРМАЦИЯ ОБРАЗОВАНИЯ ЧЕРЕЗ ТЕХНОЛОГИИ</p>
+                        <div class="mission-text">
+                            <p>Технологии позволяют усовершенствовать процесс обучения:</p>
+                            <ul>
+                                <li>Связь учителя и ученика из любой точки мира 24/7</li>
+                                <li>Образовательный контент с автопроверкой</li>
+                                <li>Отчеты по занятиям и учебным целям</li>
+                                <li>Расписание всегда под рукой</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section_divider">
+
+        <!-- MENTORS -->
+        <div id="mentors" class="mentors">
+            <p class="heading-p"><span>НАШИ МЕНТОРЫ</span></p>
+            <div id="mentors-list">
+                <div class="mentor">
+                    <img src="./images/mentors/sergey_kochetkov.png" alt="programming mentor">
+                    <div class="mentors-list-text">
+                        <p class="mentor-name">Сергей Кочетков</p>
+                        <p class="mentor-level">Senior Backend<br>Software Developer</p>
+                        <p class="what-to-learn">Подготовка к собеседованиям<br>Код-ревью<br>Обучение разработке сложных
+                            высоконагруженных систем</p>
+                        <details class="about-mentor text-left">
+                            <summary>Подробнее</summary>
+                            <p>12+ года в разработке.<br>Разработка высоконагруженных FinTech систем. Написание SOLID
+                                поддерживаемого и тестируемого кода на разных языках программирования.</p>
+                        </details>
+                        <p class="price-hour text-right">от 9000 тг за занятие</p>
+                    </div>
+                </div>
+                <div class="mentor">
+                    <div style="position: relative; width: 100%;">
+                        <img src="./images/mentors/temir_erenchin.jpg" alt="programming mentor">
+                        <img src="./images/icons/process_stoped.png" alt="process stoped"
+                            style="border: 2px solid red; border-radius: 1px; position: absolute; top: 75%; left: 75%; transform: translate(-50%, -50%) rotate(-45deg);">
+                    </div>
+                    <div class="mentors-list-text">
+                        <p class="mentor-name">Эренчин Темир</p>
+                        <p class="mentor-level">Middle iOS<br>Software Developer</p>
+                        <p class="what-to-learn">Обучение разработке iOS/MacOS приложений<br>Код-ревью<br>Подготовка к
+                            собеседованиям<br></p>
+                        <details class="about-mentor text-left">
+                            <summary>Подробнее</summary>
+                            <p>3+ года в разработке.<br>Стек: Swift, iOS, Core Data, JSON, Cocoa, MVP · MVVM · UIKit ·
+                                Client/server</p>
+                        </details>
+                        <p class="price-hour text-right">от 5400 тг за занятие</p>
+                    </div>
+                </div>
+                <div class="mentor">
+                    <img src="./images/mentors/eres_karasal.jpg" alt="programming mentor">
+                    <div class="mentors-list-text">
+                        <p class="mentor-name">Кара-Сал Эрес</p>
+                        <p class="mentor-level">Junior Python<br>Software Developer</p>
+                        <p class="what-to-learn">Основы программирования<br>Языки программирования Python и
+                            JavaScript<br>Разработка приложений</p>
+                        <details class="about-mentor text-left">
+                            <summary>Подробнее</summary>
+                            <p>1+ года в преподавании.<br>Основы разработки приложений (игры, сайты,
+                                десктоп)<br>Подготовка к экзаменам, олимпиадам.<br>Стек: Python, Django, HTML, CSS, JS,
+                                SQL.</p>
+                        </details>
+                        <p class="price-hour text-right">от 3600 тг за занятие</p>
+                    </div>
+                </div>
+                <div class="mentor">
+                    <img src="./images/mentors/timur_bekher.jpg" alt="programming mentor">
+                    <div class="mentors-list-text">
+                        <p class="mentor-name">Бехер Тимур</p>
+                        <p class="mentor-level">Junior Python<br>Data Analyst</p>
+                        <p class="what-to-learn">Основы программирования<br>Язык программирования Python<br>Обучение
+                            анализу данных</p>
+                        <details class="about-mentor text-left">
+                            <summary>Подробнее</summary>
+                            <p>3.5+ в преподавании.<br>Основы анализа больших данных на Python<br>Разработка
+                                приложений<br>Стек: Python, NymPy, Pandas, SQL.</p>
+                        </details>
+                        <p class="price-hour text-right">от 3600 тг за занятие</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="section_divider">
+
+        <!-- BUTTONS FOR STUDENT AND MENTOR -->
+        <div id="roles" class="roles">
+            <p class="heading-roles">НАЧАТЬ ОБУЧЕНИЕ</p>
+            <p class="learn-heading">Заполните анкету на Google Forms и мы с Вами свяжемся</p>
+            <div class="choose-role-buttons"><a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfNB2fk43A2B3tZvHKT2pVpRiCh6fYt6j51I4Mll56rlE4F6g/viewform?usp=sharing"
+                    target="_blank">
+                    <div class="image-container">
+                        <img src="images/be_student.jpg" alt="student">
+                        <p>НАЧАТЬ УЧИТЬСЯ</p>
+                    </div>
+                </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8NDBUFRo_QlOR-1Rm1SAjhAa3KiJrX9iZQuT7_Y7ze_3mEA/viewform?usp=sharing"
+                    target="_blank">
+                    <div class="image-container">
+                        <img src="images/be_mentor.jpg" alt="mentor">
+                        <p>СТАТЬ МЕНТОРОМ</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <hr class="section_divider">
+
+        <!-- GET IN TOUCH -->
+        <div id="get-in-touch" class="get-in-touch">
+            <p id="call-to-action">ОСТАЛИСЬ ВОПРОСЫ?</p>
+            <p>Свяжитесь с нами</p>
+            <div class="contacts">
+                <img src="./images/icons/email.svg" alt="email icon">
+                <p><span>ydecide.company@gmail.com</span></p>
+            </div>
+            <div class="contacts">
+                <img src="./images/icons/telephone.svg" alt="telephone icon">
+                <a href="https://t.me/rs_karasal" target="_blank"><img src="./images/icons/telegram.svg"
+                        alt="telegram icon"></a>
+                <a href="https://wa.me/77002999240" target="_blank"><img src="./images/icons/whatsapp.svg"
+                        alt="whatsapp icon"></a>
+                <p><span>+7 700 299 92 40</span></p>
+            </div>
+        </div>
+
+        <script src="scripts.js"></script>
+    </main>
+
+    <footer>
+        <div>
+            © 2023 yDecide Company
+        </div>
+    </footer>
+
+</body>
+
+</html>
